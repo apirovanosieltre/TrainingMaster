@@ -20,7 +20,9 @@ La cartella pubblicabile è `dist/`. Su hosting statico servire `index.html` e g
 - Vista dimostrativa atleta/preparatore, con selettore del ruolo. Non è autenticazione.
 - Programmi di esempio e consultazione delle singole sessioni.
 - Caricamento e assegnazione locale di PDF e documenti, conservati in IndexedDB.
-- Richieste schede, prenotazioni da confermare e diario allenamenti, conservati in localStorage.
+- Richieste schede e diario allenamenti, conservati in localStorage.
+- Calendario mensile con disponibilità pubblicate dal preparatore, prenotazione di slot liberi e annullamento. Le nuove prenotazioni sono confermate subito nella demo.
+- Comandi distinti per ruolo: il preparatore carica schede e gestisce gli orari; l’atleta consulta e registra i propri allenamenti. I controlli sono locali, non autenticazione.
 - Guide visuali per gli 11 esercizi/movimenti delle schede di esempio, pulsanti “i”, ricerca e illustrazioni SVG incluse nella cache offline.
 - Timer di lavoro e recupero preimpostati negli esercizi, conto alla rovescia libero e cronometro.
 - Timer persistente con scadenza assoluta: navigazione, refresh e sospensione della pagina non riavviano il conteggio. Il segnale audio richiede una pagina attiva; non è garantito con schermo bloccato o app chiusa.
@@ -29,7 +31,7 @@ La cartella pubblicabile è `dist/`. Su hosting statico servire `index.html` e g
 
 ## Stato del progetto
 
-È una demo locale, non ancora un servizio multiutente. Non sono implementati account reali, API, database condiviso, calendario con disponibilità, notifiche push e importazione automatica delle schede. Il cambio di ruolo serve a provare i flussi sullo stesso dispositivo.
+È una demo locale, non ancora un servizio multiutente. Non sono implementati account reali, API, database condiviso, calendario condiviso multiutente, notifiche push e importazione automatica delle schede. Il cambio di ruolo serve a provare i flussi sullo stesso dispositivo.
 
 I documenti caricati sono consultabili ma non vengono ancora analizzati per estrarne esercizi e tempi. I timer delle schede provengono dai programmi dimostrativi strutturati nell'app.
 
