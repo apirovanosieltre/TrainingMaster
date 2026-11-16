@@ -22,3 +22,9 @@ La Screen Wake Lock API richiede un contesto sicuro (HTTPS o localhost) e può e
 Riferimenti: [MDN: Screen Wake Lock](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Wake_Lock_API) e [request()](https://developer.mozilla.org/en-US/docs/Web/API/WakeLock/request).
 
 Test automatici: attivazione per modalità, rilascio in pausa/fine timer e background, riacquisizione, errori, supporto mancante, richieste pendenti invalidate e persistenza delle preferenze. Verifica UI nel browser con concessione reale dell'API e stato attivo, pausa e cambio modalità. Il blocco fisico e il comportamento energetico su un iPhone o Android reale richiedono verifica sul dispositivo.
+
+## Segnali del timer
+
+Le opzioni sonore sono indipendenti: **Segnale sonoro al termine** produce tre toni brevi, mentre **Beep negli ultimi 5 secondi** produce un tono a 5, 4, 3, 2 e 1 secondi. Il cronometro non ha un conto alla rovescia e non usa questi ultimi segnali. I cinque secondi finali vengono evidenziati anche visivamente.
+
+I suoni sono sintetizzati localmente con Web Audio, senza file o richieste di rete. L'avvio del timer o l'attivazione di un'opzione sonora prova a sbloccare il contesto audio. Le preferenze vengono conservate tra le sessioni; una preferenza silenziosa già esistente mantiene disabilitati anche i nuovi beep, salvo scelta esplicita. Non si riproducono segnali arretrati dopo il ritorno dal background.
