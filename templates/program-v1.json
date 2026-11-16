@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "program_name": "Forza e condizionamento",
+  "sessions": [
+    {
+      "id": "A",
+      "name": "Full body",
+      "exercises": [
+        {
+          "exercise_order": 1,
+          "exercise_name": "Riscaldamento",
+          "sets": 1,
+          "work_seconds": 480,
+          "rest_seconds": 0,
+          "notes": "Mobilità e attivazione"
+        },
+        {
+          "exercise_order": 2,
+          "exercise_name": "Squat con bilanciere",
+          "sets": 3,
+          "reps": 10,
+          "rest_seconds": 90,
+          "load_kg": 40.0,
+          "notes": "Controllare la tecnica"
+        },
+        {
+          "exercise_order": 3,
+          "exercise_name": "Plank",
+          "sets": 3,
+          "work_seconds": 40,
+          "rest_seconds": 45,
+          "notes": "Mantenere la posizione"
+        }
+      ]
+    }
+  ]
+}

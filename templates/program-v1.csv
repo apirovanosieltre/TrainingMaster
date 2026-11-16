@@ -1,0 +1,4 @@
+schema_version,program_name,session_id,session_name,exercise_order,exercise_name,sets,reps,work_seconds,rest_seconds,load_kg,notes
+1,Forza e condizionamento,A,Full body,1,Riscaldamento,1,,480,0,,Mobilità e attivazione
+1,Forza e condizionamento,A,Full body,2,Squat con bilanciere,3,10,,90,40,Controllare la tecnica
+1,Forza e condizionamento,A,Full body,3,Plank,3,,40,45,,Mantenere la posizione
