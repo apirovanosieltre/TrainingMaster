@@ -21,6 +21,7 @@ La cartella pubblicabile è `dist/`. Su hosting statico servire `index.html` e g
 - Programmi di esempio e consultazione delle singole sessioni.
 - Caricamento e assegnazione locale di PDF e documenti, conservati in IndexedDB.
 - Richieste schede, prenotazioni da confermare e diario allenamenti, conservati in localStorage.
+- Guide visuali per gli 11 esercizi/movimenti delle schede di esempio, pulsanti “i”, ricerca e illustrazioni SVG incluse nella cache offline.
 - Timer di lavoro e recupero preimpostati negli esercizi, conto alla rovescia libero e cronometro.
 - Timer persistente con scadenza assoluta: navigazione, refresh e sospensione della pagina non riavviano il conteggio. Il segnale audio richiede una pagina attiva; non è garantito con schermo bloccato o app chiusa.
 - Tema automatico secondo il sistema, con scelta manuale chiaro/scuro salvata sul dispositivo.
